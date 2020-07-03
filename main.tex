@@ -1,0 +1,54 @@
+\documentclass[12pt]{report}
+\usepackage{booktabs} % For formal tables
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bbm}
+\usepackage{mathtools}
+\usepackage{dsfont}
+\usepackage{graphicx}
+\usepackage{tabularx} 
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{longtable}
+%\usepackage{xcolor}
+
+
+\def\rot#1{\rotatebox{90}{#1}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+\include{config}
+\include{constants}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\include{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Body of Thesis goes here.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%To inlcude new chapter add "\include{chapters/chapter-no/chapter-no.tex"
+%\include{Chapters/chapter1/chapter1}
+%\include{Chapters/chapter2/chapter2}
+%\include{Chapters/chapter3/chapter3}
+%\include{Chapters/chapter4/chapter4}
+%\include{Chapters/chapter5/chapter5}
+%\include{Chapters/chapter5/chapter5}
+%\include{Chapters/appendixA/appendixA}
+
+%You can edit your citation style by changing the name in \bibliographystyle{plain} --> \bibliographystyle{new style name}
+\bibliographystyle{plain}
+%Add the bibilography file name below
+\bibliography{bibfile}
+
+\end{document}
