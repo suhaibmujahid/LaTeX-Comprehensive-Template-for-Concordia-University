@@ -1,13 +1,16 @@
 \documentclass[12pt]{report}
 
+\include{config}
 
 \def\rot#1{\rotatebox{90}{#1}}
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
 
-\include{config}
+
 \include{constants}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,7 +32,7 @@
 %\include{Chapters/appendixA/appendixA}
 
 %You can edit your citation style by changing the name in \bibliographystyle{plain} --> \bibliographystyle{new style name}
-\bibliographystyle{plain}
+\bibliographystyle{plainnat}
 %Add the bibilography file name below
 \bibliography{bibfile}
 
